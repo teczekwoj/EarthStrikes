@@ -1,6 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import altair as alt
 
 st.set_page_config(
     page_title="Analiza danych uderzeń meteorytów w Ziemię",
@@ -44,3 +47,10 @@ try:
     st.write(df)
 except FileNotFoundError:
     st.error(f"Plik CSV o nazwie '{file_path}' nie został znaleziony.")
+
+# Statystyki podstawowe dotyczące mas meteorytów
+st.subheader("Statystyki dotyczące mas meteorytów")
+mass_stats = df['mass (g)'].describe()
+st.write(mass_stats)
+
+
