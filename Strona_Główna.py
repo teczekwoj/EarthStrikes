@@ -6,6 +6,7 @@ import seaborn as sns
 import altair as alt
 from PIL import Image
 
+
 ############
 ###CONFIG###
 ############
@@ -18,7 +19,7 @@ st.set_page_config(
 ##############
 ### SIDEBAR ###
 ##############
-image = Image.open('asteroid.png')
+image = Image.open('images/asteroid.png')
 st.sidebar.image(image, use_column_width="auto")
 
 ############
