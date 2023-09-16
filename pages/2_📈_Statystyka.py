@@ -1,9 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import plotly.express as px
 import matplotlib.pyplot as plt
-import seaborn as sns
-import altair as alt
+from PIL import Image
 
 st.set_page_config(
     page_title="Analiza danych uderzeń meteorytów w Ziemię",
@@ -11,25 +11,21 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+##############
+### SIDEBAR ###
+##############
+image = Image.open('images/asteroid.png')
+st.sidebar.image(image, use_column_width="auto")
 
 ####################
 ### WPROWADZENIE ###
 ####################
 
-# Wczytywanie pliku CSV z folderu "Projekt_v1"
-file_path = "Meteorite_Landings.csv" 
-# Sprawdź, czy plik istnieje
-try:
-    df = pd.read_csv(file_path)
-except FileNotFoundError:
-    st.error(f"Plik CSV o nazwie '{file_path}' nie został znaleziony.")
+df = pd.read_csv("Meteorite_Landings.csv")       
+fig = px.histogram(df,"year")
+st.plotly_chart(fig, use_container_width=True)
+fig = px.histogram(df,"fall")
+st.plotly_chart(fig, use_container_width=True)
+fig = px.histogram(df,"recclass")
+st.plotly_chart(fig, use_container_width=True)
 
-    # Utwórz wykres w Altair
-chart = alt.Chart(df).mark_bar().encode(
-    x=alt.X('year:N', title='Rok'),
-    y=alt.Y('count():Q', title='Ilość wystąpień')
-).properties(
-    title='Ilość wystąpień w danym roku'
-)
-# Wyświetlenie wykresu w Streamlit
-st.altair_chart(chart)
