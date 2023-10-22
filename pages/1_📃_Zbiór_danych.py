@@ -94,6 +94,6 @@ col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
    st.info(":four::five::seven::one::five: uniklalnych meteorytów o niepowtarzalnych nazwach")
 with col2:
-   st.info("Z pośród wszystkich tylko wśród :one::one::zero::seven: zostało zaobserwowane uderzenie")
+   st.info("Z pośród wszystkich tylko wśród :one::one::one::zero: zostało zaobserwowane uderzenie")
 with col3:
    st.info(f"**{round(df['mass (g)'].sum()/1000)}** kg - tyle wynosi łączna masa meteorytów które spadły na Ziemię. Jest to zaledwie 6% masy wieży Eiffla.")
