@@ -40,11 +40,15 @@ if category == 'Chondryty':
                 chondrites_zwyczajne = st.selectbox(
                 'Wybierz podkategorię',
                 ('Chondryty H', 'Chondryty L', 'Chondryty LL'))
-             
+         
     st.divider()
     st.markdown('''   
     tekst o Chondrytach
     ''')
+    if chondrites_types == 'Chondryty zwyczajne':
+            st.markdown('''   
+            tekst o Chondryty zwyczajne
+            ''')
     if chondrites_types == 'Chondryty enstatytowe':
             st.markdown('''   
             tekst o Chondryty enstatytowe
