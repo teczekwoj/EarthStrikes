@@ -3,3 +3,6 @@ pandas
 numpy
 plotly.express
 matplotlib
+streamlit_folium
+folium.plugins
+folium
