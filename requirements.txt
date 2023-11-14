@@ -5,4 +5,4 @@ plotly.express
 matplotlib
 streamlit_folium
 folium.plugins
-folium
+folium==0.14.0
