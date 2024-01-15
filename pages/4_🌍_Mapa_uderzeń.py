@@ -49,7 +49,6 @@ with col2:
     Każdy punkt na mapie symbolizuje konkretne zdarzenie, posiadając nazwę związaną z meteorytem, który spadł.  
     Po najechaniu kursorem na dany punkt, można uzyskać informacje o współrzędnych geograficznych miejsca, w którym doszło do uderzenia oraz o nazwie meteorytu.
     ''')
-st.divider()
 tab1, tab2 = st.tabs(["Wykres", "Kod"])
 with tab1:
     col1, col2 = st.columns([0.7, 0.3])
@@ -73,9 +72,22 @@ with tab1:
             center=dict(lon=0, lat=0),
             color_discrete_sequence=['#FFA15A'],
             mapbox_style="carto-positron",
-            height= 700,
+            height= 770,
         )
         st.plotly_chart(fig, use_container_width=True)
+        with col2:
+            st.header('Mapa obszarowa', divider='grey')
+            st.markdown('''
+            Na tej interaktywnej mapie dostępne są filtry krajów, pozwalające użytkownikowi skoncentrować się na uderzeniach meteoroidów w wybranych regionach świata.
+            Interfejs umożliwia użytkownikowi wybór konkretnych krajów, które chce zobaczyć na mapie, co pozwala na bardziej spersonalizowane i ukierunkowane eksplorowanie danych o uderzeniach meteoroidów.
+            Dodatkowo, po wybraniu obszaru pojawiają się informacje statystyczne.
+            ''')
+            percentage = (len(selected_countries_df)/len(df_countries))*100
+            percentage_str = f"{percentage:.2f}%"
+            st.metric(label=":orange[Ilość meteorytów znalezionych w wybranym kraju:]", value=len(selected_countries_df))
+            st.metric(label=":orange[Procent wzystkich znalezionych meteorytów na Ziemi:]", value=percentage_str)
+            st.dataframe(selected_countries_df,use_container_width=True, hide_index=True,height=280)
+
 with tab2:
     #opis wykresu fall count
     st.markdown('''
