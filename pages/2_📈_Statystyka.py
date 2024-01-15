@@ -32,22 +32,29 @@ with col1:
 with col2:
     #opis wykresu year count
     st.markdown('''
-    **Opis**
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
+**Wykres przedstawia ilość wystąpień uderzeń meteorytów na Ziemię w zależności od lat.**  
+Na osi Y znajduje się liczba wystąpień, a na osi X umieszczone są kolejne lata, w których te uderzenia miały miejsce.  
+Całkowita liczba wystąpień wynosi 45 715, co stanowi sumę wszystkich zarejestrowanych przypadków uderzeń meteorytów.             
+Zauważalna jest pewna zmienność w ilości uderzeń w poszczególnych latach, co może sugerować różnice w intensywności zjawiska w różnych okresach czasu.   
+Zależy ona najpewniej od:
+- intensywności spdadków meteorytów w danym roku.
+- ruchu Ziemi po orbicie wokół Słońca i systematycznych przelotach w pobliżu Ziemi różnych obiektów typu meteory, komety, ławice itp.
+- zapisu danych przez naukowców, nagły wzrost zapisów widać po 1974r.
+- najstarszy skatalogowany meteoryt to Nogata L6 o masie 472g z 860r.
+
     ''')
 st.divider()
 col1, col2 = st.columns([0.3, 0.7])
 with col1:
     #opis wykresu fall count
     st.markdown('''
-    **Opis**
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
+**Wykres przedstawia ilość wystąpień uderzeń meteorytów na Ziemię w zależności od parametru fall.**  
+Oś Y reprezentuje liczbę wystąpień, a oś X zawiera dwie kategorie: "Fell" oraz "Found".
+
+Liczba zdarzeń w kategorii "Fell" wynosi 1107.  
+Liczba zdarzeń w kategorii "Found" wynosi 44318.  
+Otrzymane wartości wskazują, że większość zarejestrowanych uderzeń meteoroidów została odnaleziona 97.55%, podczas gdy niewielki procent zdarzeń pozostaje jedynie zaobserwowany 2,45%.  
+To może wynikać z postępującej technologii i zdolności do systematycznego monitorowania i odnajdywania meteorytów po ich uderzeniu, co z kolei prowadzi do zdecydowanie większej liczby odnalezionych przypadków w porównaniu do zaobserwowanych.
     ''')
 with col2:
 #wykres fall count
@@ -72,7 +79,7 @@ with col2:
     #opis wykresu fall count
     st.markdown('''
     **Opis**
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
+    https://almukantarat.pl/wiedza/meteoroidy-meteory-meteoryty/
     - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
     - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
     - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
