@@ -160,3 +160,98 @@ df.loc[df['lat'] < -60, 'country'] = 'Antarctic'
 df.to_csv('zmieniony_plik.csv', index=False)
 '''
     st.code(code, language='python')
+st.divider()
+col1, col2 = st.columns([0.7, 0.3])
+
+with col1:
+    # Ustawienia kolorów dla mapy
+    color_scale = [(0, 'lightblue'), (1, 'darkblue')]
+
+    # Zakresy mas zdefiniowane w kodzie aplikacji
+    mass_ranges = {
+        1: (0, 100),
+        2: (101, 1000),
+        3: (1001, 10000),
+        4: (10001, 1000000),
+        5: (1000001, df['mass (g)'].max())
+    }
+
+    # Wybór zakresu mas meteorytów za pomocą slidera
+    selected_range = st.slider(
+        'Wybierz zakres mas meteorytów',
+        min_value=1, max_value=5, step=1, 
+    )
+
+    # Pobranie zakresu mas na podstawie wybranej wartości ze slidera
+    mass_range_options = mass_ranges[selected_range]
+
+    # Filtracja danych po zakresie mas
+    selected_mass_range_df = df[(df['mass (g)'] >= mass_range_options[0]) & (df['mass (g)'] <= mass_range_options[1])]
+
+    coll1, coll2, coll3 = st.columns([0.4,0.4,0.4])
+    with coll1:
+        # Obliczenia procentowej masy z danego zakresu
+        percentage_mass_range = (selected_mass_range_df['mass (g)'].sum() / df['mass (g)'].sum()) * 100
+        # Wyświetlenie metryki
+        st.metric(label=":orange[Masa zakresu/masa całkowita]", value=f"{percentage_mass_range:.2f}%")
+        st.info("""Wartości zakresów:  
+                1. od 1g do 100g  
+                2. od 101g do 1000g (1kg)  
+                3. od 1kg do 10kg  
+                4. od 10kg do 1000kg (1t)  
+                5. od 1t do masy największego meteoru
+        """)
+    with coll2:
+        percentage_quantity_range_1 = (selected_mass_range_df.shape[0] / df.shape[0]) * 100
+        st.metric(label=":green[Ilość zakresu/ilość całkowita]", value=f"{percentage_quantity_range_1:.2f}%")
+    with coll3:
+                # Pobranie zakresu mas na podstawie wybranej wartości ze slidera
+        mass_range_options = mass_ranges[selected_range]
+
+        # Filtracja danych po zakresie mas
+        selected_mass_range_df = df[(df['mass (g)'] >= mass_range_options[0]) & (df['mass (g)'] <= mass_range_options[1])]
+
+        # Obliczenia średniej masy meteorytu z zakresu
+        average_mass_range = selected_mass_range_df['mass (g)'].mean()
+
+        # Konwersja średniej masy do kilogramów i ton
+        average_mass_kg = average_mass_range / 1000
+        average_mass_ton = average_mass_kg / 1000
+
+        # Wyświetlenie metryk w różnych jednostkach
+        st.metric(label=":blue[Uśredniona masa w gramach]", value=f"{average_mass_range:.2f} g")
+        st.metric(label=":purple[Uśredniona masa w kilogramach]", value=f"{average_mass_kg:.2f} kg")
+        st.metric(label=":red[Uśredniona masa w tonach]", value=f"{average_mass_ton:.4f} ton")
+            # Tworzenie interaktywnej mapy
+    fig = px.scatter_mapbox(
+        selected_mass_range_df,
+        lat="reclat",
+        lon="reclong",
+        hover_name="name",
+        zoom=0.7,
+        center=dict(lon=0, lat=0),
+        color="mass (g)",
+        color_continuous_scale=color_scale,
+        mapbox_style="carto-positron",
+        height= 770
+    )
+
+    # Wyświetlenie mapy
+    st.plotly_chart(fig,use_container_width=True)
+
+with col2:
+            st.header('')
+            st.header('')
+            st.header('')
+            st.header('Mapa mas', divider='grey')
+            st.markdown('''
+            Interaktywna mapa na stronie internetowej przedstawiająca znalezione meteoryty stanowi heatmap zależny od mas tych obiektów.
+            Użytkownik ma możliwość wyboru mapy z pięciu dostępnych zakresów mas meteorytów. Dodatkowo, na mapie widoczne są wskaźniki takie jak:
+            - procentowa masa danego zakresu w stosunku do masy całkowitej, 
+            - procentowa ilość meteorytów w danym zakresie w stosunku do ilości całkowitej, 
+            - uśredniona masa pojedynczego meteorytu w danym zakresie.
+                        
+            To narzędzie umożliwia użytkownikowi dynamiczne eksplorowanie i analizę danych dotyczących znalezionych meteorytów.
+            ''')
+            st.dataframe(selected_mass_range_df,use_container_width=True, hide_index=True,height=480)
+
