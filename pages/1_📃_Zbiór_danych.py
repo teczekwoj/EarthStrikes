@@ -95,3 +95,5 @@ with col2:
    st.info("Z pośród wszystkich tylko wśród :one::one::one::zero: zostało zaobserwowane uderzenie")
 with col3:
    st.info(f"**{round(df['mass (g)'].sum()/1000)}** kg - tyle wynosi łączna masa meteorytów które spadły na Ziemię. Jest to zaledwie 6% masy wieży Eiffla.")
+with col4:
+   st.info("**69.14%** wszystkich znalezisk odkyto na Antarktydzie")

@@ -76,9 +76,10 @@ with col1:
 with col2:
     #opis wykresu fall count
     st.markdown('''
-    **Opis**
-    https://almukantarat.pl/wiedza/meteoroidy-meteory-meteoryty/
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    - Magna irure incididunt eiusmod nulla eu aliqua laborum sint Lorem mollit consectetur esse.
-    ''')
+**Wykres przedstawia ilość wystąpień uderzeń meteorytów na Ziemię w zależności od ich składu**  
+Oś X reprezentuje różne materiały, z których zbudowane są meteoroidy. Wartości na osi X odnoszą się do konkretnej klasyfikacji lub rodzaju materiałów, z których składają się te kosmiczne obiekty. Przykładowo, może to obejmować metale, minerały, skały czy inne substancje, które są charakterystyczne dla składu meteoroidów. Etykiety na osi X mogą wskazywać konkretne składniki chemiczne lub grupy minerałów.
+
+Oś Y reprezentuje ilość meteoroidów zbudowanych z danego materiału. Skala na osi Y przedstawia liczbę uderzeń meteoroidów, w których dany materiał jest głównym składnikiem. W ten sposób, wykres umożliwia porównanie częstości uderzeń meteoroidów dla różnych rodzajów materiałów, co może dostarczyć istotnych informacji na temat składu i rozpowszechnienia meteoroidów na Ziemi.
+
+Wykres taki może być przydatny dla naukowców, którzy badają wpływ meteoroidów na Ziemię, a także dla inżynierów pracujących nad strategiami obrony przed tymi obiektami kosmicznymi. Wizualizacja danych na wykresie ułatwia zrozumienie, które materiały dominują w składzie meteoroidów uderzających w Ziemię oraz jakie są ich różnice pod względem ilości uderzeń.
+''')
