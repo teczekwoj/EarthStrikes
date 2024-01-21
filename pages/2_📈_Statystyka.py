@@ -2,22 +2,27 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from PIL import Image
+############
+###CONFIG###
+############
 
 st.set_page_config(
     page_title="Analiza danych uderzeń meteorytów w Ziemię",
     page_icon="🚀",
     layout="wide",
-    initial_sidebar_state="expanded"
-)
+    initial_sidebar_state="expanded")
+
 ##############
-### SIDEBAR ###
+### SIDEBAR ##
 ##############
+
 image = Image.open('images/asteroid.png')
 st.sidebar.image(image, use_column_width="auto")
 
 ####################
 ### WPROWADZENIE ###
 ####################
+
 #odczyt z sortowaniem year i usuwaniem nulli
 df = pd.read_csv("Meteorite_Landings.csv").dropna(subset=['year']).sort_values(by='year', ascending=True)
 col1, col2 = st.columns([0.7, 0.3])
@@ -39,8 +44,7 @@ Zależy ona najpewniej od:
 - ruchu Ziemi po orbicie wokół Słońca i systematycznych przelotach w pobliżu Ziemi różnych obiektów typu meteory, komety, ławice itp.
 - zapisu danych przez naukowców, nagły wzrost zapisów widać po 1974r.
 - najstarszy skatalogowany meteoryt to Nogata L6 o masie 472g z 860r.
-
-    ''')
+''')
 st.divider()
 col1, col2 = st.columns([0.3, 0.7])
 with col1:
@@ -51,9 +55,9 @@ Oś Y reprezentuje liczbę wystąpień, a oś X zawiera dwie kategorie: "Fell" o
 
 Liczba zdarzeń w kategorii "Fell" wynosi 1107.  
 Liczba zdarzeń w kategorii "Found" wynosi 44318.  
-Otrzymane wartości wskazują, że większość zarejestrowanych uderzeń meteoroidów została odnaleziona 97.55%, podczas gdy niewielki procent zdarzeń pozostaje jedynie zaobserwowany 2,45%.  
+Otrzymane wartości wskazują, że większość zarejestrowanych uderzeń meteoroidów została odnaleziona - **97.55%**, podczas gdy niewielki procent zdarzeń pozostaje jedynie zaobserwowany **2.45%**.  
 To może wynikać z postępującej technologii i zdolności do systematycznego monitorowania i odnajdywania meteorytów po ich uderzeniu, co z kolei prowadzi do zdecydowanie większej liczby odnalezionych przypadków w porównaniu do zaobserwowanych.
-    ''')
+''')
 with col2:
 #wykres fall count
     fig = px.histogram(df,"fall")

@@ -5,14 +5,15 @@ from PIL import Image
 ############
 ###CONFIG###
 ############
+
 st.set_page_config(
     page_title="Analiza danych uderzeń meteorytów w Ziemię",
     page_icon="🚀",
     layout="wide",
-    initial_sidebar_state="expanded"
-)
+    initial_sidebar_state="expanded")
+
 ##############
-### SIDEBAR ###
+### SIDEBAR ##
 ##############
 image = Image.open('images/asteroid.png')
 st.sidebar.image(image, use_column_width="auto")
@@ -20,14 +21,15 @@ st.sidebar.image(image, use_column_width="auto")
 ############
 ### BODY ###
 ############
-#opis zbioru danych
+
 st.subheader("Źródło danych")
 st.divider()
 col1, col2 = st.columns([0.6, 0.4])
 
 with col1:
+   url = "https://meteoritical.org/"
    st.markdown('''
-Ten obszerny zestaw danych z The Meteoritical Society zawiera informacje o wszystkich znanych lądowaniach meteorytów. Tabela zawiera aż 34 513 meteorytów!  
+Ten obszerny zestaw danych z [The Meteoritical Society](%s) zawiera informacje o wszystkich znanych lądowaniach meteorytów. Tabela zawiera aż 34 513 meteorytów!  
 Dane pochodzą z NASA Open Data Portal, czyli portalu gdzie NASA udostępnia niektóre swoje dane. Zespół Programu Zarządzania Informacjami NASA wspiera wysiłki NASA w udostępnianiu dostępu do badań oraz otwartych zestawów danych w formacie,
 który jest użyteczny dla użytkowników.   
 W ten sposób mają nadzieję pobudzić kreatywne myśli i wyposażyć innych w narzędzia do innowacji na Ziemi
@@ -35,7 +37,7 @@ zarówno na poziomie lokalnym, globalnym, jak i międzygwiezdnym, wykorzystując
 Choć NASA nie jest w stanie obecnie oferować podróży kosmicznych, to zespół Programu Zarządzania Informacjami jest gotowy do współpracy z 
 innymi w rozwiązywaniu wyzwań na naszej planecie, korzystając z danych, narzędzi i zasobów dostępnych w agencji.
 
-''', help= "Więcej informacji o The Meteoritical Society: https://meteoritical.org/")
+''' % url, help= "Więcej informacji o DATA.NASA.GOV:  https://data.nasa.gov")
    
 with col2:
    st.image("images/nasa-logo.png")

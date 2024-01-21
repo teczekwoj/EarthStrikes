@@ -1,19 +1,26 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
+from zmienne_tekstowe import *
+
+############
+###CONFIG###
+############
 
 st.set_page_config(
     page_title="Analiza danych uderzeń meteorytów w Ziemię",
     page_icon="🚀",
     layout="wide",
-    initial_sidebar_state="expanded"
-)
+    initial_sidebar_state="expanded")
+
 ##############
-### SIDEBAR ###
+### SIDEBAR ##
 ##############
+
 image = Image.open('images/asteroid.png')
 st.sidebar.image(image, use_column_width="auto")
-############sssssss
+
+############
 ### BODY ###
 ############
 

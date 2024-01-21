@@ -9,8 +9,8 @@ st.set_page_config(
     page_title="Analiza danych uderzeń meteorytów w Ziemię",
     page_icon="🚀",
     layout="centered",
-    initial_sidebar_state="expanded"
-)
+    initial_sidebar_state="expanded")
+
 ##############
 ### SIDEBAR ##
 ##############
@@ -62,6 +62,7 @@ Meteoroidy mogą powstawać na dwa sposoby:
 Źródło: https://almukantarat.pl/wiedza/meteoroidy-meteory-meteoryty/  
 (Klub astronomiczny Almukantrat)              
 ''')
+    
 with st.expander("Czym są :green[meteory]?"):
     st.write('''
 Nazwa „meteor” pochodzi od greckiego słowa „meteoros”, co znaczy „wysoko na niebie”. Meteor to świecący ślad, jaki zostawia na niebie meteoroid, który wpadł w atmosferę ziemską. To właśnie to zjawisko jest często błędnie nazywane „spadającą gwiazdą”. Po wejściu w atmosferę meteoroid zaczyna się spalać w wyniku silnego oporu powietrza, a właściwie w wyniku adiabatycznego sprężania powietrza tuż przed jego czołem. Jego powierzchnia rozgrzewa się wtedy do temperatury kilku tysięcy st. Celsjusza, ale temperatura w środku skały może tylko nieznacznie wzrosnąć. w przypadku odłamków żelaznych cały meteoroid silnie się rozgrzewa, ponieważ żelazo jest dużo lepszym przewodnikiem cieplnym niż skała. w czasie przelotu meteoroidu przez atmosferę dochodzi do ablacji, czyli topnienia i zwiewania wierzchnich warstw skały. Meteoroid wpada w ziemską atmosferę z prędkością 11–76 km/s. Zaczyna świecić na wysokości 100–130 km, a gaśnie zwykle na wysokości 75–80 km, czasem niżej, nawet do 30 km. Meteor przestaje świecić, w momencie, kiedy początkowa prędkość meteoroidu zostaje wyhamowana i porusza się on tylko spadkiem swobodnym. Warto dodać, że to, co widzimy, nie jest świeceniem samego odłamku skalnego, lecz cząsteczek zjonizowanego powietrza wokół niego.
@@ -74,6 +75,7 @@ Większość meteoroidów wpadających do atmosfery ziemskiej ulega całkowitej 
 Źródło: https://almukantarat.pl/wiedza/meteoroidy-meteory-meteoryty/  
 (Klub astronomiczny Almukantrat)   
 ''')
+    
 with st.expander("Czym są :green[meteoryty]?"):
     st.write('''
 Meteoryt to, najprościej mówiąc, meteoroid, który dotarł w postaci ciała stałego do powierzchni Ziemi. Szacuje się, że na Ziemię codziennie spada od 100 do nawet 1000 ton meteorytów. Oczywiście większość z nich to drobne okruchy.
@@ -87,6 +89,7 @@ Obecnie znanych jest ok. 1050 meteorytów, które zostały odnalezione w wyniku 
 Źródło: https://almukantarat.pl/wiedza/meteoroidy-meteory-meteoryty/  
 (Klub astronomiczny Almukantrat)   
 ''')
+    
 with st.expander("Misja :green[DART]"):
     st.write('''
 Bezzałogowa misja sondy kosmicznej, której celem był test technologii zapobiegających kolizji obiektów NEO z Ziemią. Zadaniem sondy DART była planowana kolizja impaktora z Dimorphosem – księżycem planetoidy Didymos, w celu sprawdzenia, czy celowe rozbicie sondy kosmicznej o asteroidę jest efektywnym sposobem na zmianę jej kursu. Sonda DART została wyniesiona na orbitę 24 listopada 2021 z Vandenberg Space Force Base w Kalifornii za pomocą rakiety nośnej Falcon 9 i zderzyła się z asteroidą docelową 27 września 2022 o 01:14  
