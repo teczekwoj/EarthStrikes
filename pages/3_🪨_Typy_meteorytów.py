@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-from zmienne_tekstowe import *
+from zmienne_tekstowe_tekst import *
 
 ############
 ###CONFIG###
@@ -46,17 +46,12 @@ if category == 'Chondryty':
                 ('Chondryty H', 'Chondryty L', 'Chondryty LL'))
          
     st.divider()
-    st.markdown('''   
-    tekst o Chondrytach
-    ''')
+    st.markdown(text_chondryty)
+    
     if chondrites_types == 'Chondryty zwyczajne':
-            st.markdown('''   
-            tekst o Chondryty zwyczajne
-            ''')
+            st.markdown(text_chondryty_zwyczajne)
     if chondrites_types == 'Chondryty enstatytowe':
-            st.markdown('''   
-            tekst o Chondryty enstatytowe
-            ''')
+            st.markdown(text_chondryty_enstatytowe)
             with col3:
                 st.dataframe(pd.DataFrame(
                 {
@@ -65,9 +60,7 @@ if category == 'Chondryty':
                 }),hide_index= True)
 
     if chondrites_types == 'Chondryty węgliste':
-            st.markdown('''   
-            tekst o Chondryty węgliste
-            ''')
+            st.markdown(text_chondryty_węgliste)
             with col3:
                 st.dataframe(pd.DataFrame(
                     {
@@ -76,18 +69,14 @@ if category == 'Chondryty':
                     "Cechy wyróżniające/charakter": ["Friable, more water. Minerals:  Phyllosilicates, magnetite", "Friable, more water. Minerals:  Phyllosilicates, magnetite", "Fe rich olivine, CAIs","Minerals:  Phyllosilicates, pyroxene, olivine, metal", "Minerals: Olivine, Pyroxene, CAIs, metal", "Minerals:  Olivine, CAIs","Minerals:  Metal, Pyroxene.  [ongoing research suggests the product of asteroidal collisions.]", "Minerals:  Pyroxene, metal, olivine.  [May be related to Bencubbinites]", "This is a unique meteorite that samples the D asteroid family"],  
                     }),hide_index= True)
     if chondrites_types == 'Kakangari-type':
-            st.markdown('''   
-            tekst o Kakangari-type
-            ''')     
+            st.markdown(text_kakangari_type)     
             with col3:
                 st.dataframe(pd.DataFrame(
                     {
                     "Kod": ["K"],
                     }),hide_index= True)               
     if chondrites_types == 'Rumurutiites':
-            st.markdown('''   
-            tekst o Rumurutiites
-            ''')    
+            st.markdown(text_rumurutiites)    
             with col3:
                 st.dataframe(pd.DataFrame(
                     {
@@ -95,9 +84,7 @@ if category == 'Chondryty':
                     "Cechy wyróżniające/charakter": [" Minerals: Olivine, pyroxene, plagioclase, sulfide."],  
                     }),hide_index= True)
     if chondrites_zwyczajne == 'Chondryty H':
-            st.markdown('''   
-            tekst o Chondryty H
-            ''')
+            st.markdown(text_chondryty_h)
             with col3:
                 st.dataframe(pd.DataFrame(
                 {
@@ -106,9 +93,7 @@ if category == 'Chondryty':
                 }),hide_index= True)
 
     elif chondrites_zwyczajne == 'Chondryty L':
-            st.markdown('''   
-            tekst o Chondryty L
-            ''')
+            st.markdown(text_chondryty_l)
             with col3:
                 st.dataframe(pd.DataFrame(
                 {
@@ -117,9 +102,7 @@ if category == 'Chondryty':
                 }),hide_index= True)
 
     elif chondrites_zwyczajne == 'Chondryty LL':
-            st.markdown('''   
-            tekst o Chondryty LL
-            ''')
+            st.markdown(text_chondryty_ll)
             with col3:
                 st.dataframe(pd.DataFrame(
                 {
@@ -134,9 +117,7 @@ if category == 'Achondryty':
         'Wybierz grupę Achondytów',
         ['Howardites', 'Eucrites', 'Diogenite', 'Shergottites','Nakhlites','Chassignite','Lunar','Aubrites','Acapulcoite','Lodranite','Ureilites','Angrite','Brachinite','Winonaite'])
     st.divider()
-    st.markdown('''   
-    Tabela o Achondrytach
-    ''')
+    st.markdown( text_achondryty)
     with col3:
         st.dataframe(pd.DataFrame(
             {
@@ -147,33 +128,33 @@ if category == 'Achondryty':
             }),hide_index= True)
 for selected_case in case:
         if selected_case == 'Howardites':
-            st.markdown('Tekst o Howardites')
+            st.markdown(text_howardites)
         elif selected_case == 'Eucrites':
-            st.markdown('Tekst o Eucrites')
+            st.markdown(text_eucrites)
         elif selected_case == 'Diogenite':
-            st.markdown('Tekst o Diogenite')
+            st.markdown(text_diogenite)
         elif selected_case == 'Shergottites':
-            st.markdown('Tekst o Shergottites')
+            st.markdown(text_shergottites)
         elif selected_case == 'Nakhlites':
-            st.markdown('Tekst o Nakhlites')
+            st.markdown(text_nakhlites)
         elif selected_case == 'Chassignite':
-            st.markdown('Tekst o Chassignite')
+            st.markdown(text_chassignite)
         elif selected_case == 'Lunar':
-            st.markdown('Tekst o Lunar')
+            st.markdown(text_lunar)
         elif selected_case == 'Aubrites':
-            st.markdown('Tekst o Aubrites')
+            st.markdown(text_aubrites)
         elif selected_case == 'Acapulcoite':
-            st.markdown('Tekst o Acapulcoite')
+            st.markdown(text_acapulcoite)
         elif selected_case == 'Lodranite':
-            st.markdown('Tekst o Lodranite')
+            st.markdown(text_lodranite)
         elif selected_case == 'Ureilites':
-            st.markdown('Tekst o Ureilites')
+            st.markdown(text_ureilites)
         elif selected_case == 'Angrite':
-            st.markdown('Tekst o Angrite')
+            st.markdown('text_angrite')
         elif selected_case == 'Brachinite':
-            st.markdown('Tekst o Brachinite')
+            st.markdown(text_brachinite)
         elif selected_case == 'Winonaite':
-            st.markdown('Tekst o Winonaite')
+            st.markdown(text_winonaite)
         
 if category == 'Żelazne (klasyfikacja strukturalna)':
     with col2:
@@ -181,13 +162,9 @@ if category == 'Żelazne (klasyfikacja strukturalna)':
         'Wybierz typ budowy',
         ('Heksaedryty', 'Oktaedryty', 'Ataksyty'))
     st.divider()
-    st.markdown('''   
-    Tabela o Meteorytach z żelaza (klasyfikacja strukturalna)
-        ''')
+    st.markdown(text_żelazne)
     if irons == 'Heksaedryty':
-            st.markdown('''   
-            tekst o Heksaedryty
-            ''')
+            st.markdown(text_heksaedryty)
             with col3:
                 st.dataframe(pd.DataFrame(
             {
@@ -196,9 +173,7 @@ if category == 'Żelazne (klasyfikacja strukturalna)':
             }),hide_index= True)      
 
     if irons == 'Oktaedryty':
-            st.markdown('''   
-            tekst o Oktaedryty
-            ''')
+            st.markdown(text_oktaedryty)
             with col3:
                 st.dataframe(pd.DataFrame(
             {
@@ -208,9 +183,7 @@ if category == 'Żelazne (klasyfikacja strukturalna)':
             }),hide_index= True)      
 
     if irons == 'Ataksyty':
-            st.markdown('''   
-            tekst o Ataksyty
-            ''')
+            st.markdown(text_ataksyty)
             with col3:
                 st.dataframe(pd.DataFrame(
             {
@@ -220,9 +193,7 @@ if category == 'Żelazne (klasyfikacja strukturalna)':
 
 if category == 'Żelazne (klasyfikacja chemiczna)':
     st.divider()
-    st.markdown('''   
-    Tabela o Meteorytach z żelaza (klasyfikacja chemiczna)
-        ''')
+    st.markdown(text_żelaza_klasyfikacja_chemiczna)
     
 if category == 'Kamienno-żelazne':
     with col2:
@@ -230,14 +201,8 @@ if category == 'Kamienno-żelazne':
         'Wybierz typ budowy',
         ('Pallasyty', 'Mezosyderyty'))
     st.divider()
-    st.markdown('''   
-    Tabela o Meteorytach Kamienno-żelazne
-        ''')
+    st.markdown(text_kamiennożelazne)
 if irons == 'Pallasyty':
-            st.markdown('''   
-            tekst o Pallasyty
-            ''')
+            st.markdown(text_pallasyty)
 if irons == 'Mezosyderyty':
-            st.markdown('''   
-            tekst o Mezosyderyty
-            ''')
+            st.markdown(text_mezosyderyty)
