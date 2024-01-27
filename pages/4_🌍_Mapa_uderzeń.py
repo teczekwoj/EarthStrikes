@@ -43,7 +43,7 @@ with col1:
 with col2:
     #opis wykresu year count
     st.header('')
-    st.header('Mapa wszystkich uderzeń', divider='grey')
+    st.header('Mapa wszystkich uderzeń', divider='grey', anchor=False)
     st.markdown('''  
     Mapa na której zaznaczone są punkty rejestrowanych uderzeń meteorytów na Ziemię.  
     Każdy punkt na mapie symbolizuje konkretne zdarzenie, posiadając nazwę związaną z meteorytem, który spadł.  
@@ -76,7 +76,7 @@ with tab1:
         )
         st.plotly_chart(fig, use_container_width=True)
         with col2:
-            st.header('Mapa obszarowa', divider='grey')
+            st.header('Mapa obszarowa', divider='grey', anchor=False)
             st.markdown('''
             Na tej interaktywnej mapie dostępne są filtry krajów, pozwalające użytkownikowi skoncentrować się na uderzeniach meteoroidów w wybranych regionach świata.
             Interfejs umożliwia użytkownikowi wybór konkretnych krajów, które chce zobaczyć na mapie, co pozwala na bardziej spersonalizowane i ukierunkowane eksplorowanie danych o uderzeniach meteoroidów.
@@ -240,10 +240,8 @@ with col1:
     st.plotly_chart(fig,use_container_width=True)
 
 with col2:
-            st.header('')
-            st.header('')
-            st.header('')
-            st.header('Mapa mas', divider='grey')
+
+            st.header('Mapa mas', divider='grey', anchor=False)
             st.markdown('''
             Interaktywna mapa na stronie internetowej przedstawiająca znalezione meteoryty stanowi heatmap zależny od mas tych obiektów.
             Użytkownik ma możliwość wyboru mapy z pięciu dostępnych zakresów mas meteorytów. Dodatkowo, na mapie widoczne są wskaźniki takie jak:

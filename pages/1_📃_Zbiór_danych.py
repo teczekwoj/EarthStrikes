@@ -22,7 +22,7 @@ st.sidebar.image(image, use_column_width="auto")
 ### BODY ###
 ############
 
-st.subheader("Źródło danych")
+st.subheader("Źródło danych", anchor=False)
 st.divider()
 col1, col2 = st.columns([0.6, 0.4])
 
@@ -44,7 +44,7 @@ with col2:
 
 
 #opis kolumn
-st.subheader("Opis kolumn")
+st.subheader("Opis kolumn", anchor=False)
 st.divider()
 col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -84,7 +84,7 @@ file_path = "Meteorite_Landings.csv"
 url= "https://data.nasa.gov/resource/gh4g-9sfh.csv"
 try:
     df = pd.read_csv(file_path)
-    st.subheader("Surowe dane")
+    st.subheader("Surowe dane", anchor=False)
     st.dataframe(df, 1600, 500)
 except FileNotFoundError:
     st.error(f"Plik CSV o nazwie '{file_path}' nie został znaleziony.")
