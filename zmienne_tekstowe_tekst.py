@@ -53,26 +53,48 @@ text_acapulcoite = """**Akapulkoity** to grupa meteorytów kamienno-żelaznych, 
 
 text_lodranite = """**Lodranity** to meteoryty kamienno-żelazne, różniące się od innych składem chemicznym. Nazwa grupy lodranitu pochodzi od Lodhran w Pakistanie, gdzie okaz typu spadł 1 października 1868 roku o godzinie 14:00. Naoczni świadkowie upadku zgłosili głośny huk, któremu towarzyszyła unosząca się chmura pyłu na wschód od miasta, co doprowadziło do odkrycia i odzyskania meteorytu. „Meteoryt z Lodranu” został po raz pierwszy opisany przez Gustava Tschermaka w 1870 roku. Opisał meteoryt jako „oprócz niklu i żelaza jest to agregaty oliwinowo-brązzytowe tak wyjątkowego rodzaju, że nigdy wcześniej nie znaleziono ich w meteorycie, jedynie przypominających ziemską skałę oliwinową”. George Thurland Prior jako pierwszy zaklasyfikował meteoryt lodran jako jedyny należący do grupy lodranitów. Dostrzegł także bliskie podobieństwa do ureilitów."""
 
-text_ureilites = """**Ureility** to meteoryty kamienno-żelazne, charakteryzujące się wysoką zawartością minerałów oliwinowych."""
+text_ureilites = """**Ureilit** to rzadki rodzaj meteorytu kamiennego, który ma unikalny skład mineralogiczny, bardzo różniący się od innych meteorytów kamiennych. Nazwa tego ciemnoszarego lub brązowawego meteorytu pochodzi od wioski Nowy Urej (cyrylica: Новый Урей) w Mordowii w Rosji, gdzie meteoryt tego typu spadł 4 września 1886 r. Godnymi uwagi ureilitami są Novo Urei i Goalpara, zwane także dla miasta, w którym wylądował (Goalpara, Assam, Indie). W dniu 7 października 2008 r. malutka asteroida 2008 TC3 weszła w ziemską atmosferę i eksplodowała około 37 kilometrów nad Pustynią Nubijską w Sudanie. Fragmenty tej asteroidy odnaleziono w grudniu następnego roku i okazało się, że są to ureility. Naukowcy odkryli aminokwasy w meteorycie 2008 TC3 tam, gdzie się ich nie spodziewano, biorąc pod uwagę wysokie temperatury osiągnięte podczas eksplozji wynoszące około 1000 °C"""
 
-text_angrite = """**Angryty** to grupa meteorytów skałotwórczych, zawierających minerały takie jak oliwiny i pirokseny."""
+text_angrite = """**Angryty** to rzadka grupa achondrytów składająca się głównie z diopsydu zawierającego Al-Ti, hedenbergitu, oliwinu, anortytu i troilitu z niewielkimi śladami fosforanów i metali. Nazwa grupy pochodzi od meteorytu Angra dos Reis. Są to najstarsze skały magmowe, których wiek krystalizacji wynosi około 4,56 miliarda lat. Angryty dzielą się na dwie główne grupy: angrity hartowane i plutoniczne. Hartowane angrity schładzały się szybko na powierzchni ciała macierzystego Angrite (APB), podczas gdy angrity plutoniczne schładzały się wolniej, głębiej w skorupie. Uważa się, że APB miał rozmiar podobny do asteroidy 4 Westa."""
 
-text_brachinite = """**Brachinity** to rzadki rodzaj meteorytu skałotwórczego, charakteryzujący się specyficznym składem mineralnym."""
+text_brachinite = """**Brachinity** to grupa meteorytów sklasyfikowanych jako prymitywne achondryty lub achondryty asteroidalne. Podobnie jak wszystkie prymitywne achondryty, mają podobieństwa do chondrytów i achondrytów. Brachinity zawierają od 74 do 98% (obj.) oliwinu.
+Nazwa brachinitów pochodzi od meteorytu Brachina, okazu typu tej grupy, którego nazwa pochodzi od Brachina w Australii Południowej.
+Brachinity składają się prawie wyłącznie z oliwinu (74-98% objętości). Inne minerały obejmują plagioklaz (6,7 do 12,9%), siarczki żelaza (1,8 do 4,0%), klinopiroksen (1,5 do 8,2%) i ortopiroksen (0 do 2,4%). Minerały śladowe obejmują fosforany i żelazo meteorytowe. Jedynym odstępstwem od chondrytów jest bardzo wysoki stosunek oliwinu do ortopiroksenu."""
 
-text_winonaite = """**Winonaity** to grupa meteorytów kamienno-żelaznych, o unikalnym składzie chemicznym."""
+text_winonaite = """**Winonaity** to grupa prymitywnych meteorytów achondrytowych. Podobnie jak wszystkie prymitywne achondryty, winonaity mają podobieństwa z chondrytami i achondrytami. Wykazują oznaki metamorfizmu, częściowego przetopienia, brekcjacji i reliktowych chondr. Ich skład chemiczny i mineralogiczny mieści się pomiędzy chondrytami H i E.
 
-text_żelazne = """**Meteoryty żelazne** to kamienne-żelazne meteoryty, zawierające duże ilości metalu, głównie w postaci żelaza-niklu."""
+Nazwa grupy winonaitów pochodzi od okazu typu, meteorytu Winona. Sama nazwa pochodzi od słowa Winona w Arizonie, gdzie okaz ten znaleziono podczas wykopalisk archeologicznych w wiosce Elden Pueblo w Sinagua we wrześniu 1928 roku."""
 
-text_heksaedryty = """**Heksaedryty** to meteoryty żelazne o strukturze krystalicznej w postaci heksagonalnych kształtów."""
+text_żelazne = """**Meteoryty żelazne**, zwane także syderytami lub meteorytami żelaznymi, to rodzaj meteorytów składających się głównie ze stopu żelaza i niklu, znanego jako żelazo meteoryczne, które zwykle składa się z dwóch faz mineralnych: kamacytu i taenitu.
+Żelazo znalezione w meteorytach żelaznych było jednym z najwcześniejszych źródeł użytecznego żelaza dostępnych dla ludzi ze względu na plastyczność żelaza meteorytowego przed rozwojem wytapiania, które sygnalizowało początek epoki żelaza.
+Chociaż są one dość rzadkie w porównaniu z meteorytami kamiennymi i stanowią jedynie około 5,7% obserwowanych upadków, meteoryty żelazne były w przeszłości znacznie nadreprezentowane w kolekcjach meteorytów. Wynika to z kilku czynników:
+Łatwo je rozpoznać jako niezwykłe, w przeciwieństwie do kamiennych meteorytów. Współczesne poszukiwania meteorytów na pustyniach i Antarktydzie dają w sumie znacznie bardziej reprezentatywną próbkę meteorytów.
+Są dużo bardziej odporne na warunki atmosferyczne.
+Mają znacznie większe szanse na przeżycie przedostawania się do atmosfery i są bardziej odporne na wynikającą z nich ablację. Dlatego częściej można je znaleźć w postaci dużych kawałków.
+Ze względu na ich metaliczny skład można je znaleźć nawet po zakopaniu za pomocą powierzchniowego sprzętu do wykrywania metali.
+Ponieważ są one również gęstsze niż meteoryty kamienne, meteoryty żelazne stanowią również prawie 90% masy wszystkich znanych meteorytów, czyli około 500 ton. Wszystkie największe znane meteoryty są tego typu, w tym największy – meteoryt Hoba."""
 
-text_oktaedryty = """**Oktaedryty** to meteoryty żelazne o strukturze krystalicznej w postaci ośmiościennej formy."""
+text_heksaedryty = """**Heksaedryty** to meteoryty żelazne o strukturze krystalicznej w postaci heksagonalnych kształtów. To strukturalna klasa meteorytów żelaznych. Składają się prawie wyłącznie z kamacytu ze stopu niklu i żelaza i zawierają niższą zawartość niklu niż oktaedryty. Stężenie niklu w heksaedrytach jest zawsze poniżej 5,8%, a rzadko poniżej 5,3%"""
 
-text_ataksyty = """**Ataksyty** to meteoryty żelazne o strukturze krystalicznej, charakteryzujące się brakiem widocznych wzorów strukturalnych."""
+text_oktaedryty = """**Oktaedryty** to meteoryty żelazne o strukturze krystalicznej w postaci ośmiościennej formy.Oktaedryty są najczęstszą klasą strukturalną meteorytów żelaznych. Struktury powstają, ponieważ żelazo meteoryczne ma określone stężenie niklu, które podczas chłodzenia prowadzi do wydzielania kamacytu z taenitu."""
 
-text_żelaza_klasyfikacja_chemiczna = """**Meteoryty żelazne**, pod względem klasyfikacji chemicznej, dzieli się na grupy na podstawie zawartości pierwiastków, takich jak nikiel i kobalt."""
+text_ataksyty = """**Ataksyty** to meteoryty żelazne o strukturze krystalicznej, charakteryzujące się brakiem widocznych wzorów strukturalnych. Ataksyty składają się głównie z żelaza meteorytowego, rodzimego metalu występującego w meteorytach, który składa się z mineralnego taenitu z niewielkimi ilościami plessytu, troilitu i mikroskopijnych blaszek kamacytu. Ataksyty to najbardziej bogate w nikiel znane meteoryty; zwykle zawierają ponad 18% niklu."""
 
-text_kamiennożelazne = """**Meteoryty kamienno-żelazne** to grupa meteorytów zawierających zarówno metal, jak i minerały skałotwórcze, tworzącą unikalne struktury."""
+text_żelaza_klasyfikacja_chemiczna = """**Meteoryty żelazne**, pod względem klasyfikacji chemicznej, dzieli się na grupy na podstawie zawartości pierwiastków, takich jak nikiel i kobalt. Nowszy schemat klasyfikacji chemicznej oparty na proporcjach pierwiastków śladowych Ga, Ge i Ir dzieli meteoryty żelazne na klasy odpowiadające odrębnym ciałom macierzystym asteroid. Klasyfikacja ta opiera się na diagramach przedstawiających zawartość niklu w funkcji różnych pierwiastków śladowych (np. Ga, Ge i Ir). Różne grupy meteorytów żelaznych pojawiają się jako skupiska punktów danych.
 
-text_pallasyty = """**Pallasyty** to grupa meteorytów kamienno-żelaznych, charakteryzująca się niską zawartością niklu i specyficznym składem mineralnym."""
+Pierwotnie istniały cztery takie grupy, oznaczone cyframi rzymskimi I, II, III, IV. Gdy dostępnych stało się więcej danych chemicznych, podzielono je, np. Grupę IV podzielono na meteoryty IVA i IVB. Jeszcze później niektóre grupy ponownie się połączyły, gdy odkryto meteoryty pośrednie, m.in. IIIA i IIIB połączono, tworząc meteoryty IIIAB.
+Więcej informacji: https://en.wikipedia.org/wiki/Iron_meteorite"""
 
-text_mezosyderyty = """**Mezosyderyty** to meteoryty kamienno-żelazne, które zawierają zarówno metal, jak i minerały skałotwórcze, w proporcjach pośrednich."""
+text_kamiennożelazne = """**Meteoryty kamienno-żelazne** to grupa meteorytów zawierających zarówno metal, jak i minerały skałotwórcze, tworzącą unikalne struktury. Meteoryty żelazne lub syderolity to meteoryty składające się z prawie równych części żelaza meteorytowego i krzemianów. To odróżnia je od meteorytów kamiennych, które składają się głównie z krzemianów, i meteorytów żelaznych, które składają się głównie z żelaza meteorytowego.
+
+Wszystkie meteoryty kamienno-żelazne są zróżnicowane, co oznacza, że wykazują oznaki zmian. Są zatem achondrytami.
+
+Żelazo kamienne dzieli się na mezosyderyty i pallasyty. Pallasyty mają matrycę z żelaza meteorytowego z osadzonymi krzemianami (większość z nich to oliwin). Mezosyderyty to brekcje wykazujące oznaki metamorfizmu. Żelazo meteoryczne występuje w klastach zamiast w matrycy."""
+
+text_pallasyty = """**Pallasyty** to grupa meteorytów kamienno-żelaznych, charakteryzująca się niską zawartością niklu i specyficznym składem mineralnym. To klasa meteorytów kamienno-żelaznych. Występują stosunkowo rzadko i można je rozpoznać po obecności dużych wtrąceń kryształów oliwinu w osnowie żelazoniklowej.
+
+Kryształy te reprezentują materiał płaszcza i jądra zróżnicowanych planetozymali, które zostały zniszczone w wyniku gwałtownych zderzeń podczas wczesnego formowania się Układu Słonecznego."""
+
+text_mezosyderyty = """**Mezosyderyty** to klasa meteorytów kamienno-żelaznych składających się z mniej więcej równych części metalicznego niklu i żelaza oraz krzemianów. Są to brekcje o nieregularnej fakturze; krzemiany i metale występują często w bryłach lub otoczakach, a także w drobnoziarnistych przerostach. Część krzemianowa zawiera oliwin, pirokseny i skaleń bogaty w Ca i ma podobny skład do eukrytów i diogenitów.
+
+Są rzadkim rodzajem meteorytów; od listopada 2014 r. znanych jest tylko 208 (z czego 56 pochodzi z Antarktydy), a tylko 7 z nich to zaobserwowane upadki. Z drugiej strony niektóre mezosyderyty należą do największych znanych meteorytów."""
