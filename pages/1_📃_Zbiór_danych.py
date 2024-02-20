@@ -81,7 +81,6 @@ with col5:
 #tabela
 st.divider()
 file_path = "Meteorite_Landings.csv" 
-url= "https://data.nasa.gov/resource/gh4g-9sfh.csv"
 try:
     df = pd.read_csv(file_path)
     st.subheader("Surowe dane", anchor=False)
@@ -99,3 +98,5 @@ with col3:
    st.info(f"**{round(df['mass (g)'].sum()/1000)}** kg - tyle wynosi łączna masa meteorytów które spadły na Ziemię. Jest to zaledwie 6% masy wieży Eiffla.")
 with col4:
    st.info("**69.14%** wszystkich znalezisk odkyto na Antarktydzie")
+
+   
