@@ -1,3 +1,10 @@
+Link do aplikacji:
+https://earthstrikes.streamlit.app/
+
+Link to web app:
+https://earthstrikes.streamlit.app/
+
+
 # Specyfikacja aplikacji do analizy danych uderzeń meteorytów w Ziemię.  
 
 ## 1. Wymagania biznesowe
